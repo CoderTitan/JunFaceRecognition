@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47EB9F201FBD8B83004B4C18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EB9F1F1FBD8B83004B4C18 /* AppDelegate.swift */; };
+		47EB9F221FBD8B83004B4C18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EB9F211FBD8B83004B4C18 /* ViewController.swift */; };
+		47EB9F251FBD8B83004B4C18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47EB9F231FBD8B83004B4C18 /* Main.storyboard */; };
+		47EB9F281FBD8B83004B4C18 /* JunFaceRecognition.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47EB9F261FBD8B83004B4C18 /* JunFaceRecognition.xcdatamodeld */; };
+		47EB9F2A1FBD8B83004B4C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47EB9F291FBD8B83004B4C18 /* Assets.xcassets */; };
+		47EB9F2D1FBD8B83004B4C18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47EB9F2B1FBD8B83004B4C18 /* LaunchScreen.storyboard */; };
+		47EB9F381FBD8B83004B4C18 /* JunFaceRecognitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EB9F371FBD8B83004B4C18 /* JunFaceRecognitionTests.swift */; };
+		47EB9F431FBD8B83004B4C18 /* JunFaceRecognitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EB9F421FBD8B83004B4C18 /* JunFaceRecognitionUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47EB9F341FBD8B83004B4C18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47EB9F141FBD8B83004B4C18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47EB9F1B1FBD8B83004B4C18;
+			remoteInfo = JunFaceRecognition;
+		};
+		47EB9F3F1FBD8B83004B4C18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47EB9F141FBD8B83004B4C18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47EB9F1B1FBD8B83004B4C18;
+			remoteInfo = JunFaceRecognition;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		47EB9F1C1FBD8B83004B4C18 /* JunFaceRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JunFaceRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47EB9F1F1FBD8B83004B4C18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		47EB9F211FBD8B83004B4C18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		47EB9F241FBD8B83004B4C18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		47EB9F271FBD8B83004B4C18 /* JunFaceRecognition.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JunFaceRecognition.xcdatamodel; sourceTree = "<group>"; };
+		47EB9F291FBD8B83004B4C18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47EB9F2C1FBD8B83004B4C18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		47EB9F2E1FBD8B83004B4C18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47EB9F331FBD8B83004B4C18 /* JunFaceRecognitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JunFaceRecognitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47EB9F371FBD8B83004B4C18 /* JunFaceRecognitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JunFaceRecognitionTests.swift; sourceTree = "<group>"; };
+		47EB9F391FBD8B83004B4C18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47EB9F3E1FBD8B83004B4C18 /* JunFaceRecognitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JunFaceRecognitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47EB9F421FBD8B83004B4C18 /* JunFaceRecognitionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JunFaceRecognitionUITests.swift; sourceTree = "<group>"; };
+		47EB9F441FBD8B83004B4C18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47EB9F191FBD8B83004B4C18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47EB9F301FBD8B83004B4C18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47EB9F3B1FBD8B83004B4C18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47EB9F131FBD8B83004B4C18 = {
+			isa = PBXGroup;
+			children = (
+				47EB9F1E1FBD8B83004B4C18 /* JunFaceRecognition */,
+				47EB9F361FBD8B83004B4C18 /* JunFaceRecognitionTests */,
+				47EB9F411FBD8B83004B4C18 /* JunFaceRecognitionUITests */,
+				47EB9F1D1FBD8B83004B4C18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47EB9F1D1FBD8B83004B4C18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47EB9F1C1FBD8B83004B4C18 /* JunFaceRecognition.app */,
+				47EB9F331FBD8B83004B4C18 /* JunFaceRecognitionTests.xctest */,
+				47EB9F3E1FBD8B83004B4C18 /* JunFaceRecognitionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47EB9F1E1FBD8B83004B4C18 /* JunFaceRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				47EB9F1F1FBD8B83004B4C18 /* AppDelegate.swift */,
+				47EB9F211FBD8B83004B4C18 /* ViewController.swift */,
+				47EB9F231FBD8B83004B4C18 /* Main.storyboard */,
+				47EB9F291FBD8B83004B4C18 /* Assets.xcassets */,
+				47EB9F2B1FBD8B83004B4C18 /* LaunchScreen.storyboard */,
+				47EB9F2E1FBD8B83004B4C18 /* Info.plist */,
+				47EB9F261FBD8B83004B4C18 /* JunFaceRecognition.xcdatamodeld */,
+			);
+			path = JunFaceRecognition;
+			sourceTree = "<group>";
+		};
+		47EB9F361FBD8B83004B4C18 /* JunFaceRecognitionTests */ = {
+			isa = PBXGroup;
+			children = (
+				47EB9F371FBD8B83004B4C18 /* JunFaceRecognitionTests.swift */,
+				47EB9F391FBD8B83004B4C18 /* Info.plist */,
+			);
+			path = JunFaceRecognitionTests;
+			sourceTree = "<group>";
+		};
+		47EB9F411FBD8B83004B4C18 /* JunFaceRecognitionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				47EB9F421FBD8B83004B4C18 /* JunFaceRecognitionUITests.swift */,
+				47EB9F441FBD8B83004B4C18 /* Info.plist */,
+			);
+			path = JunFaceRecognitionUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47EB9F1B1FBD8B83004B4C18 /* JunFaceRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47EB9F471FBD8B83004B4C18 /* Build configuration list for PBXNativeTarget "JunFaceRecognition" */;
+			buildPhases = (
+				47EB9F181FBD8B83004B4C18 /* Sources */,
+				47EB9F191FBD8B83004B4C18 /* Frameworks */,
+				47EB9F1A1FBD8B83004B4C18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JunFaceRecognition;
+			productName = JunFaceRecognition;
+			productReference = 47EB9F1C1FBD8B83004B4C18 /* JunFaceRecognition.app */;
+			productType = "com.apple.product-type.application";
+		};
+		47EB9F321FBD8B83004B4C18 /* JunFaceRecognitionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47EB9F4A1FBD8B83004B4C18 /* Build configuration list for PBXNativeTarget "JunFaceRecognitionTests" */;
+			buildPhases = (
+				47EB9F2F1FBD8B83004B4C18 /* Sources */,
+				47EB9F301FBD8B83004B4C18 /* Frameworks */,
+				47EB9F311FBD8B83004B4C18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47EB9F351FBD8B83004B4C18 /* PBXTargetDependency */,
+			);
+			name = JunFaceRecognitionTests;
+			productName = JunFaceRecognitionTests;
+			productReference = 47EB9F331FBD8B83004B4C18 /* JunFaceRecognitionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		47EB9F3D1FBD8B83004B4C18 /* JunFaceRecognitionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47EB9F4D1FBD8B83004B4C18 /* Build configuration list for PBXNativeTarget "JunFaceRecognitionUITests" */;
+			buildPhases = (
+				47EB9F3A1FBD8B83004B4C18 /* Sources */,
+				47EB9F3B1FBD8B83004B4C18 /* Frameworks */,
+				47EB9F3C1FBD8B83004B4C18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47EB9F401FBD8B83004B4C18 /* PBXTargetDependency */,
+			);
+			name = JunFaceRecognitionUITests;
+			productName = JunFaceRecognitionUITests;
+			productReference = 47EB9F3E1FBD8B83004B4C18 /* JunFaceRecognitionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47EB9F141FBD8B83004B4C18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = CoderJun;
+				TargetAttributes = {
+					47EB9F1B1FBD8B83004B4C18 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					47EB9F321FBD8B83004B4C18 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 47EB9F1B1FBD8B83004B4C18;
+					};
+					47EB9F3D1FBD8B83004B4C18 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 47EB9F1B1FBD8B83004B4C18;
+					};
+				};
+			};
+			buildConfigurationList = 47EB9F171FBD8B83004B4C18 /* Build configuration list for PBXProject "JunFaceRecognition" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47EB9F131FBD8B83004B4C18;
+			productRefGroup = 47EB9F1D1FBD8B83004B4C18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47EB9F1B1FBD8B83004B4C18 /* JunFaceRecognition */,
+				47EB9F321FBD8B83004B4C18 /* JunFaceRecognitionTests */,
+				47EB9F3D1FBD8B83004B4C18 /* JunFaceRecognitionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47EB9F1A1FBD8B83004B4C18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47EB9F2D1FBD8B83004B4C18 /* LaunchScreen.storyboard in Resources */,
+				47EB9F2A1FBD8B83004B4C18 /* Assets.xcassets in Resources */,
+				47EB9F251FBD8B83004B4C18 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47EB9F311FBD8B83004B4C18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47EB9F3C1FBD8B83004B4C18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47EB9F181FBD8B83004B4C18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47EB9F281FBD8B83004B4C18 /* JunFaceRecognition.xcdatamodeld in Sources */,
+				47EB9F221FBD8B83004B4C18 /* ViewController.swift in Sources */,
+				47EB9F201FBD8B83004B4C18 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47EB9F2F1FBD8B83004B4C18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47EB9F381FBD8B83004B4C18 /* JunFaceRecognitionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47EB9F3A1FBD8B83004B4C18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47EB9F431FBD8B83004B4C18 /* JunFaceRecognitionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47EB9F351FBD8B83004B4C18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47EB9F1B1FBD8B83004B4C18 /* JunFaceRecognition */;
+			targetProxy = 47EB9F341FBD8B83004B4C18 /* PBXContainerItemProxy */;
+		};
+		47EB9F401FBD8B83004B4C18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47EB9F1B1FBD8B83004B4C18 /* JunFaceRecognition */;
+			targetProxy = 47EB9F3F1FBD8B83004B4C18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		47EB9F231FBD8B83004B4C18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47EB9F241FBD8B83004B4C18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		47EB9F2B1FBD8B83004B4C18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47EB9F2C1FBD8B83004B4C18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47EB9F451FBD8B83004B4C18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		47EB9F461FBD8B83004B4C18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47EB9F481FBD8B83004B4C18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JunFaceRecognition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ios-tian.JunFaceRecognition";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		47EB9F491FBD8B83004B4C18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JunFaceRecognition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ios-tian.JunFaceRecognition";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		47EB9F4B1FBD8B83004B4C18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JunFaceRecognitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ios-tian.JunFaceRecognitionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JunFaceRecognition.app/JunFaceRecognition";
+			};
+			name = Debug;
+		};
+		47EB9F4C1FBD8B83004B4C18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JunFaceRecognitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ios-tian.JunFaceRecognitionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JunFaceRecognition.app/JunFaceRecognition";
+			};
+			name = Release;
+		};
+		47EB9F4E1FBD8B83004B4C18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JunFaceRecognitionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ios-tian.JunFaceRecognitionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JunFaceRecognition;
+			};
+			name = Debug;
+		};
+		47EB9F4F1FBD8B83004B4C18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JunFaceRecognitionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ios-tian.JunFaceRecognitionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JunFaceRecognition;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47EB9F171FBD8B83004B4C18 /* Build configuration list for PBXProject "JunFaceRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47EB9F451FBD8B83004B4C18 /* Debug */,
+				47EB9F461FBD8B83004B4C18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47EB9F471FBD8B83004B4C18 /* Build configuration list for PBXNativeTarget "JunFaceRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47EB9F481FBD8B83004B4C18 /* Debug */,
+				47EB9F491FBD8B83004B4C18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47EB9F4A1FBD8B83004B4C18 /* Build configuration list for PBXNativeTarget "JunFaceRecognitionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47EB9F4B1FBD8B83004B4C18 /* Debug */,
+				47EB9F4C1FBD8B83004B4C18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47EB9F4D1FBD8B83004B4C18 /* Build configuration list for PBXNativeTarget "JunFaceRecognitionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47EB9F4E1FBD8B83004B4C18 /* Debug */,
+				47EB9F4F1FBD8B83004B4C18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		47EB9F261FBD8B83004B4C18 /* JunFaceRecognition.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				47EB9F271FBD8B83004B4C18 /* JunFaceRecognition.xcdatamodel */,
+			);
+			currentVersion = 47EB9F271FBD8B83004B4C18 /* JunFaceRecognition.xcdatamodel */;
+			path = JunFaceRecognition.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 47EB9F141FBD8B83004B4C18 /* Project object */;
+}
