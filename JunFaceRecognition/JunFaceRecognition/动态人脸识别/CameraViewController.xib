@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CameraViewController" customModule="JunFaceRecognition" customModuleProvider="target">
+            <connections>
+                <outlet property="previewView" destination="46A-0S-YEG" id="WIy-Px-OeS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="46A-0S-YEG" customClass="JunPreviewView" customModule="JunFaceRecognition" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VSR-dt-Olq">
+                            <rect key="frame" x="0.0" y="597" width="375" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luR-bt-Mv2">
+                                    <rect key="frame" x="288" y="10" width="72" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="7gs-rN-R0D"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="切换摄像头"/>
+                                    <connections>
+                                        <action selector="switchCameraAction:" destination="-1" eventType="touchUpInside" id="bGo-Dm-BjN"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYq-AP-M2F">
+                                    <rect key="frame" x="15" y="10" width="31" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="cwW-Ea-P4g"/>
+                                    </constraints>
+                                    <state key="normal" title="拍照">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="getPhotoAction:" destination="-1" eventType="touchUpInside" id="EXa-1d-ZPb"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="luR-bt-Mv2" firstAttribute="centerY" secondItem="VSR-dt-Olq" secondAttribute="centerY" id="BVS-4I-O25"/>
+                                <constraint firstItem="CYq-AP-M2F" firstAttribute="centerY" secondItem="VSR-dt-Olq" secondAttribute="centerY" id="Lqi-Dr-jEV"/>
+                                <constraint firstAttribute="height" constant="50" id="Xob-vY-ttj"/>
+                                <constraint firstAttribute="trailing" secondItem="luR-bt-Mv2" secondAttribute="trailing" constant="15" id="cic-jD-Pia"/>
+                                <constraint firstItem="CYq-AP-M2F" firstAttribute="leading" secondItem="VSR-dt-Olq" secondAttribute="leading" constant="15" id="e63-XF-Eug"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="VSR-dt-Olq" secondAttribute="trailing" id="39K-6k-elb"/>
+                        <constraint firstAttribute="bottom" secondItem="VSR-dt-Olq" secondAttribute="bottom" id="48O-xh-YFE"/>
+                        <constraint firstItem="VSR-dt-Olq" firstAttribute="leading" secondItem="46A-0S-YEG" secondAttribute="leading" id="ABh-um-pzt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="46A-0S-YEG" secondAttribute="trailing" id="5MN-yC-AOk"/>
+                <constraint firstItem="46A-0S-YEG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="N5e-eD-b8f"/>
+                <constraint firstItem="46A-0S-YEG" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="NZL-6j-ZPu"/>
+                <constraint firstItem="46A-0S-YEG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dJX-oH-osJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-67.5" y="-228.5"/>
+        </view>
+    </objects>
+</document>

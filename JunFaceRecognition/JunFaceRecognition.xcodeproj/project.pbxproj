@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		471CC4631FC04D2E00189960 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471CC45D1FC04D2E00189960 /* CameraViewController.swift */; };
+		471CC4641FC04D2E00189960 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471CC45E1FC04D2E00189960 /* CameraViewController.xib */; };
+		471CC4651FC04D2E00189960 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471CC4611FC04D2E00189960 /* PictureViewController.swift */; };
+		471CC4661FC04D2E00189960 /* PictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471CC4621FC04D2E00189960 /* PictureViewController.xib */; };
+		471CC4681FC04E3600189960 /* JunPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471CC4671FC04E3600189960 /* JunPreviewView.swift */; };
 		47EB9F201FBD8B83004B4C18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EB9F1F1FBD8B83004B4C18 /* AppDelegate.swift */; };
 		47EB9F221FBD8B83004B4C18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EB9F211FBD8B83004B4C18 /* ViewController.swift */; };
 		47EB9F251FBD8B83004B4C18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47EB9F231FBD8B83004B4C18 /* Main.storyboard */; };
@@ -15,6 +20,7 @@
 		47EB9F2D1FBD8B83004B4C18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47EB9F2B1FBD8B83004B4C18 /* LaunchScreen.storyboard */; };
 		47EB9F381FBD8B83004B4C18 /* JunFaceRecognitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EB9F371FBD8B83004B4C18 /* JunFaceRecognitionTests.swift */; };
 		47EB9F431FBD8B83004B4C18 /* JunFaceRecognitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EB9F421FBD8B83004B4C18 /* JunFaceRecognitionUITests.swift */; };
+		47EB9F521FBE751E004B4C18 /* JunFaceRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EB9F511FBE751E004B4C18 /* JunFaceRecognition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		471CC45D1FC04D2E00189960 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		471CC45E1FC04D2E00189960 /* CameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
+		471CC4611FC04D2E00189960 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		471CC4621FC04D2E00189960 /* PictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PictureViewController.xib; sourceTree = "<group>"; };
+		471CC4671FC04E3600189960 /* JunPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JunPreviewView.swift; sourceTree = "<group>"; };
 		47EB9F1C1FBD8B83004B4C18 /* JunFaceRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JunFaceRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47EB9F1F1FBD8B83004B4C18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47EB9F211FBD8B83004B4C18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +60,7 @@
 		47EB9F3E1FBD8B83004B4C18 /* JunFaceRecognitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JunFaceRecognitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47EB9F421FBD8B83004B4C18 /* JunFaceRecognitionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JunFaceRecognitionUITests.swift; sourceTree = "<group>"; };
 		47EB9F441FBD8B83004B4C18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47EB9F511FBE751E004B4C18 /* JunFaceRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JunFaceRecognition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +88,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		471CC45C1FC04D2E00189960 /* 动态人脸识别 */ = {
+			isa = PBXGroup;
+			children = (
+				471CC45D1FC04D2E00189960 /* CameraViewController.swift */,
+				471CC45E1FC04D2E00189960 /* CameraViewController.xib */,
+				471CC45F1FC04D2E00189960 /* Views */,
+			);
+			path = "动态人脸识别";
+			sourceTree = "<group>";
+		};
+		471CC45F1FC04D2E00189960 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				471CC4671FC04E3600189960 /* JunPreviewView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		471CC4601FC04D2E00189960 /* 静态人脸识别 */ = {
+			isa = PBXGroup;
+			children = (
+				471CC4611FC04D2E00189960 /* PictureViewController.swift */,
+				471CC4621FC04D2E00189960 /* PictureViewController.xib */,
+			);
+			path = "静态人脸识别";
+			sourceTree = "<group>";
+		};
 		47EB9F131FBD8B83004B4C18 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +138,9 @@
 		47EB9F1E1FBD8B83004B4C18 /* JunFaceRecognition */ = {
 			isa = PBXGroup;
 			children = (
+				471CC45C1FC04D2E00189960 /* 动态人脸识别 */,
+				471CC4601FC04D2E00189960 /* 静态人脸识别 */,
+				47EB9F501FBE74F7004B4C18 /* JunFaceRecognition */,
 				47EB9F1F1FBD8B83004B4C18 /* AppDelegate.swift */,
 				47EB9F211FBD8B83004B4C18 /* ViewController.swift */,
 				47EB9F231FBD8B83004B4C18 /* Main.storyboard */,
@@ -126,6 +168,14 @@
 				47EB9F441FBD8B83004B4C18 /* Info.plist */,
 			);
 			path = JunFaceRecognitionUITests;
+			sourceTree = "<group>";
+		};
+		47EB9F501FBE74F7004B4C18 /* JunFaceRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				47EB9F511FBE751E004B4C18 /* JunFaceRecognition.swift */,
+			);
+			path = JunFaceRecognition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +286,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				47EB9F2D1FBD8B83004B4C18 /* LaunchScreen.storyboard in Resources */,
+				471CC4661FC04D2E00189960 /* PictureViewController.xib in Resources */,
+				471CC4641FC04D2E00189960 /* CameraViewController.xib in Resources */,
 				47EB9F2A1FBD8B83004B4C18 /* Assets.xcassets in Resources */,
 				47EB9F251FBD8B83004B4C18 /* Main.storyboard in Resources */,
 			);
@@ -262,9 +314,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47EB9F521FBE751E004B4C18 /* JunFaceRecognition.swift in Sources */,
+				471CC4651FC04D2E00189960 /* PictureViewController.swift in Sources */,
+				471CC4631FC04D2E00189960 /* CameraViewController.swift in Sources */,
 				47EB9F281FBD8B83004B4C18 /* JunFaceRecognition.xcdatamodeld in Sources */,
 				47EB9F221FBD8B83004B4C18 /* ViewController.swift in Sources */,
 				47EB9F201FBD8B83004B4C18 /* AppDelegate.swift in Sources */,
+				471CC4681FC04E3600189960 /* JunPreviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +487,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39D8T9VWXG;
 				INFOPLIST_FILE = JunFaceRecognition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ios-tian.JunFaceRecognition";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,7 +503,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39D8T9VWXG;
 				INFOPLIST_FILE = JunFaceRecognition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ios-tian.JunFaceRecognition";
 				PRODUCT_NAME = "$(TARGET_NAME)";

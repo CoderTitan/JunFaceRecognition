@@ -12,14 +12,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        title = "人脸识别"
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    //图片识别
+    @IBAction func pictureAction(_ sender: Any) {
+        navigationController?.pushViewController(PictureViewController(), animated: true)
     }
-
-
+    
+    //相机识别
+    @IBAction func cameraAction(_ sender: Any) {
+        navigationController?.pushViewController(CameraViewController(), animated: true)
+    }
 }
 
