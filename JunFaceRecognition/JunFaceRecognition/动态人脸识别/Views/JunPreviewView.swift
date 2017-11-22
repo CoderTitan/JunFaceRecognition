@@ -41,7 +41,7 @@ extension JunPreviewView: HandleMetadataOutputDelegate{
     func handleOutput(didDetect faceObjects: [AVMetadataObject], previewLayer: AVCaptureVideoPreviewLayer) {
         self.previewLayer = previewLayer
         
-        //1. 获取本地数组
+        //1. 获取预览图层的人脸数组
         let transformFaces = transformedFaces(faceObjs: faceObjects)
         
         //2. 拷贝一份所有人脸faceID字典
@@ -53,7 +53,7 @@ extension JunPreviewView: HandleMetadataOutputDelegate{
         //3. 遍历所有的face
         for i in 0..<transformFaces.count {
             guard let face = transformFaces[i] as? AVMetadataFaceObject  else { return }
-            //3.1 判断是否包含该faceID
+            //3.1 判断是否包含该faceID``
             if lostFaces.contains("\(face.faceID)"){
                 lostFaces.remove(at: i)
             }
@@ -105,6 +105,7 @@ extension JunPreviewView{
     fileprivate func transformedFaces(faceObjs: [AVMetadataObject]) -> [AVMetadataObject] {
         var faceArr = [AVMetadataObject]()
         for face in faceObjs {
+            //将扫描的人脸对象转成在预览图层的人脸对象(主要是坐标的转换)
             if let transFace = previewLayer.transformedMetadataObject(for: face){
                 faceArr.append(transFace)
             }
@@ -122,16 +123,16 @@ extension JunPreviewView{
         return layer
     }
     
-    //处理偏转角问题
+    //处理倾斜角问题
     fileprivate func transformDegress(yawAngle: CGFloat) -> CATransform3D {
         let yaw = degreesToRadians(degress: yawAngle)
         //围绕Y轴旋转
         let yawTran = CATransform3DMakeRotation(yaw, 0, -1, 0)
-        //设备旋转问题
+        //红框旋转问题
         return CATransform3DConcat(yawTran, CATransform3DIdentity)
     }
     
-    //处理倾斜角问题
+    //处理偏转角问题
     fileprivate func transformDegress(rollAngle: CGFloat) -> CATransform3D {
         let roll = degreesToRadians(degress: rollAngle)
         //围绕Z轴旋转

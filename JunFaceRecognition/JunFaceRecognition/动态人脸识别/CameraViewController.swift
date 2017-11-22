@@ -95,7 +95,7 @@ extension CameraViewController {
     
     //切换摄像头
     @IBAction func switchCameraAction(_ sender: Any) {
-        //1. 执行动画
+        //1. 执行转场动画
         let anima = CATransition()
         anima.type = "oglFlip"
         anima.subtype = "fromLeft"
@@ -112,9 +112,13 @@ extension CameraViewController {
         guard let newVideoInput = try? AVCaptureDeviceInput(device: newDevice) else { return }
         
         //4. 移除旧输入，添加新输入
+        //4.1 设备加锁
         session.beginConfiguration()
+        //4.2. 移除旧设备
         session.removeInput(deviceIn)
+        //4.3 添加新设备
         session.addInput(newVideoInput)
+        //4.4 设备解锁
         session.commitConfiguration()
         
         //5. 保存最新输入
