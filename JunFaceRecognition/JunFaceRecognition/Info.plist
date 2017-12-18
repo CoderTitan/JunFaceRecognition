@@ -43,6 +43,10 @@
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>相机</string>
+	<key>CFBundleDisplayName</key>
+	<string></string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>相册</string>
 </dict>
