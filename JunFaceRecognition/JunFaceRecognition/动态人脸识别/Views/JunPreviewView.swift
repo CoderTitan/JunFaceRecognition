@@ -52,9 +52,11 @@ extension JunPreviewView: HandleMetadataOutputDelegate{
 
         //3. 遍历所有的face
         for i in 0..<transformFaces.count {
+            
             guard let face = transformFaces[i] as? AVMetadataFaceObject  else { return }
+            
             //3.1 判断是否包含该faceID``
-            if lostFaces.contains("\(face.faceID)"){
+            if lostFaces.contains("\(face.faceID)") && lostFaces.count > i {
                 lostFaces.remove(at: i)
             }
             
